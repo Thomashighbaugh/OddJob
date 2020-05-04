@@ -1,69 +1,57 @@
-"use strict";
-var tasklist = {
-  tasks: [],
-  storage: getTaskStorage("tasks_11"),
-  displayDiv: null,
-  deleteClickHandler: null,
-  editClickHandler: null,
-
-  load: function () {
-    if (this.tasks.length === 0) {
-      tasklist.tasks = this.storage.get();
+var sortTaskList = function(tasks) {
+    var isArray = Array.isArray(tasks);
+    if (isArray) {
+        tasks.sort();
     }
-    return this;
-  },
-  save: function () {
-    this.storage.set(this.tasks);
-    return this;
-  },
-  sort: function () {
-    this.tasks.sort();
-    return this;
-  },
-  add: function (task) {
-    this.tasks.push(task);
-    return this;
-  },
-  delete: function (i) {
-    this.sort();
-    this.tasks.splice(i, 1);
-    return this;
-  },
-  edit: function (i, task) {
-    this.tasks[i] = task.toString();
-    return this;
-  },
-  clear: function () {
-    this.tasks.length = 0;
-    this.storage.clear();
-    this.displayDiv.innerHTML = "";
-    return this;
-  },
-  display: function () {
+    return isArray;
+};
+
+var displaySortedTaskList = function(tasks, div, deleteHandler, editHandler) {
     var html = "";
-    this.sort();
+    var isArray = sortTaskList(tasks);
+    
+    if (isArray) {
+        //create and load html string from sorted array
+        for (var i in tasks) {
+            html = html.concat("<p>");
+            //links which render as buttons
+            html = html.concat("<a href='#' class='btn btn-outline-info' id='", i, "'>Delete</a>");
+            html = html.concat("<a href='#' class='btn btn-outline-info' title='", i, "'>Edit</a>");
+            html = html.concat(tasks[i]);
+            html = html.concat("</p>");
+        }
+        div.innerHTML = html;
+        
+        // get links, loop and add onclick event handler
+        var links = div.getElementsByTagName("a");
+        for (var i = 0; i < links.length; i++) {
+            //links[i].onclick = handler;
+            if (links[i].innerHTML === "Delete") {
+                links[i].onclick = deleteHandler;
+            } else {
+                links[i].onclick = editHandler;
+            }
+        }
+    } 
+};
 
-    //create and load html string from sorted array
-    for (var i in this.tasks) {
-      html = html.concat("<p>");
-      html = html.concat("<a href='#' title='", i, "'>Delete</a>");
-      html = html.concat("<a href='#' title='", i, "'>Edit</a>");
-      html = html.concat("<em>");
-      html = html.concat(this.tasks[i]);
-      html = html.concat("</em>");
-      html = html.concat("</p>");
-    }
-    this.displayDiv.innerHTML = html;
+//var deleteTask = function(tasks, i) {  
+//    var isArray = sortTaskList(tasks);
+//    if (isArray) { tasks.splice(i, 1); }
+//};
+// tasks for buttons
+var deleteTask = function() {  
+    var isArray = sortTaskList.call(undefined, arguments[0]);
+    if (isArray) { arguments[0].splice(arguments[1], 1); }
+};
 
-    // get links, loop and add onclick event handler
-    var links = this.displayDiv.getElementsByTagName("a");
-    for (var i = 0; i < links.length; i++) {
-      if (links[i].innerHTML === "Delete") {
-        links[i].onclick = this.deleteClickHandler;
-      } else {
-        links[i].onclick = this.editClickHandler;
-      }
+var editTask = function(tasks, i, newText) {
+    if (Array.isArray(tasks)) {
+        tasks[i] = newText;
     }
-    return this;
-  },
+};
+
+var capitalizeTask = function(task) {
+    var first = task.substring(0,1);
+    return first.toUpperCase() + task.substring(1);
 };

@@ -1,21 +1,20 @@
-"use strict";
-var storagePrototype = {
-  get: function () {
-    var str = localStorage.getItem(this.key) || "";
-    return str === "" ? [] : str.split("|");
-  },
-  set: function (arr) {
-    if (Array.isArray(arr)) {
-      var str = arr.join("|");
-      localStorage.setItem(this.key, str);
+var getStorage = function(key) {
+    //get string from storage or an empty string if nothing in storage
+    var storage = localStorage.getItem(key) || "";
+    if (storage === "") { 
+        return []; 
+    } else {
+        return storage.split("|");
     }
-  },
-  clear: function () {
-    localStorage.setItem(this.key, "");
-  },
 };
-var getTaskStorage = function (key) {
-  var storage = Object.create(storagePrototype);
-  storage.key = key;
-  return storage;
+
+var setStorage = function(key, arr) {
+    if (Array.isArray(arr)) {
+        var storageString = arr.join("|"); 
+        localStorage.setItem(key, storageString);
+    }
+};
+
+var clearStorage = function(key) {
+    localStorage.setItem(key, "");
 };

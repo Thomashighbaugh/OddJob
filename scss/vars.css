@@ -1,0 +1,51 @@
+/*
+Error: Undefined variable: "$tasks_".
+        on line 4 of vars.scss
+
+1: $background: #343a40;
+2: $foreground: #fafafa;
+3: $tasks_bg: #2a2c3f
+4: $tasks_
+
+Backtrace:
+vars.scss:4
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `map'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `_perform'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:478:in `visit_variable'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/home/tlh/.gem/ruby/2.7.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/home/tlh/.gem/ruby/2.7.0/bin/sass:23:in `load'
+/home/tlh/.gem/ruby/2.7.0/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$tasks_\".\A         on line 4 of vars.scss\A \A 1: $background: #343a40;\A 2: $foreground: #fafafa;\A 3: $tasks_bg: #2a2c3f\A 4: $tasks_"; }
