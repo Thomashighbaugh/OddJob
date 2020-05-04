@@ -48,4 +48,5 @@ vars.scss:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$tasks_\".\A         on line 4 of vars.scss\A \A 1: $background: #343a40;\A 2: $foreground: #fafafa;\A 3: $tasks_bg: #2a2c3f\A 4: $tasks_"; }
+  content: 'Error: Undefined variable: "$tasks_".\A         on line 4 of vars.scss\A \A 1: $background: #343a40;\A 2: $foreground: #fafafa;\A 3: $tasks_bg: #2a2c3f\A 4: $tasks_';
+}
