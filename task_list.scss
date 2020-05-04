@@ -1,0 +1,10 @@
+//SCSS Main File
+//Where the SCSS is called from its directory
+// Note: this is then preprocessed into CSS either by node-sass (installed using NPM) or a file watcher available through VSCode, Webstorm or other IDE/advanced text editor.
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Zilla+Slab+Highlight&display=swap');
+// Top-Down Order, Variables definitions must come before calls
+@import "./scss/vars";
+@import './scss/body';
+
+@import './scss/tasks';
+

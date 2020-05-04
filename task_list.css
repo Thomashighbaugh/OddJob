@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Staatliches|Zilla+Slab+Highlight&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Black+Ops+One|Luckiest+Guy|Permanent+Marker&display=swap");
+* {
+  font-family: "Black Ops One", cursive, monospace; }
+
+html {
+  background-color: #343a40;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237766dd' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important; }
+
+body {
+  background: transparent;
+  font-family: "Black Ops One", cursive, monospace;
+  margin-top: 5%; }
+
+main {
+  border: 3px solid #76cd;
+  border-radius: 15px;
+  padding: 5rem;
+  min-height: 85vh; }
+
+h1 {
+  color: #fafafa;
+  text-shadow: 0.125rem 0.125rem #76cd;
+  font-family: "Permanent Marker", sans-serif; }
+  h1 .display-1 {
+    color: #76cd;
+    border-color: #76cd;
+    font-family: "Luckiest Guy", serif;
+    text-shadow: 0.18rem 0.18rem #fafafa; }
+
+.input-group {
+  display: inline-flex !important;
+  clear: both;
+  margin-top: 5%;
+  border-color: #76cd !important; }
+  .input-group .input-group-append input {
+    background: #343a40 !important;
+    color: #76cd !important;
+    text-shadow: 0.06125rem 0.06125rem #76cd !important; }
+  .input-group .input-group-append {
+    height: 65%; }
+  .input-group .input-group-text {
+    background: #76cd !important;
+    color: #fafafa !important; }
+
+.input-group-append input:hover {
+  background: #76cd !important;
+  color: #fafafa !important;
+  text-shadow: 0.6125rem 0.6125rem #343a40; }
+
+hr {
+  color: #76cd;
+  border-top: 0.25rem solid #76cd;
+  border-bottom: 0.25rem solid #76cd;
+  outline: solid #fafafa 0.25rem;
+  margin-bottom: 5rem; }
+
+footer {
+  position: absolute;
+  right: 35%;
+  color: #fafafa;
+  font-family: "Luckiest Guy", serif; }
+  footer span {
+    font-family: "Archivo Black", monospace;
+    color: #76cd;
+    text-shadow: 0.06125rem 0.06125rem #76cd;
+    font-size: 150%; }
+
+#tasks {
+  float: right;
+  margin: 0;
+  padding: 1em;
+  border: 0.01125rem solid #76cd;
+  color: #76cd;
+  text-shadow: 0.125rem 0.125rem #fafafa !important;
+  border-radius: 15px;
+  background-color: #343a40;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237766dd' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+  #tasks em {
+    text-shadow: 0.06125rem 0.06125rem #fafafa !important;
+    background: #343a40 !important;
+    padding: 0.25rem; }
+  #tasks p {
+    font-family: "Permanent Marker", sans-serif;
+    margin: 0;
+    padding: .5rem;
+    font-weight: 900;
+    font-size: 150%;
+    border-bottom: 0.1125rem solid #76cd; }
+
+#tasks a {
+  padding-right: 1.5rem;
+  margin-right: 1.5rem;
+  border-right: 0.1125rem solid #76cd;
+  color: #fafafa;
+  background: #343a40 !important;
+  font-family: "Archivo Black", monospace;
+  text-shadow: 0.06125rem 0.06125rem #76cd; }
+
+#tasks a:hover {
+  background: #76cd !important;
+  text-shadow: 0.06125rem 0.06125rem #343a40; }
+
+.clear {
+  clear: both; }
+
+/*# sourceMappingURL=task_list.css.map */
