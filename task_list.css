@@ -20,7 +20,7 @@ h1 {
   margin-bottom: 0.5em;
   border-bottom: 0.25rem #44ddff solid;
 }
-h2{
+h2 {
   margin: 0;
 }
 label {
@@ -62,7 +62,7 @@ input[type="button"]:hover {
 #name {
   font-size: 2.5rem;
   text-shadow: #556 0.25rem 0.25rem;
-  margin-top:0;
+  margin-top: 0;
 }
 aside {
   max-width: 25%;
@@ -83,7 +83,7 @@ section {
 #task {
   font-size: 150%;
 }
-main{
+main {
   clear: both;
   display: block;
   padding: 0.5rem 0.25rem 1rem 0.5rem;
